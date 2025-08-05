@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Masukkan Barang Penjualan</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(to right, #ffccff, #ccf2ff);
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Navigasi */
+    nav {
+      background-color: #d32791;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    nav .menu {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav .menu a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-top: 30px;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(139, 59, 115, 0.2);
+      max-width: 600px;
+      margin: 30px auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #d32791;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigasi -->
+  <nav>
+    <h2>Citrarasa Seblak</h2>
+    <div class="menu">
+      <a href="#">Beranda</a>
+      <a href="#">Produk</a>
+      <a href="#">Tambah Produk</a>
+      <a href="#">Kontak</a>
+    </div>
+  </nav>
+
+  <h1>Citarasa Seblak</h1>
+
+  <form action="" method="POST" enctype="multipart/form-data">
+    <label for="nama_pembeli">Nama pembeli:</label>
+    <input type="text" id="nama_pembeli" name="nama_pembeli" required>
+
+    <label for="Menu">Menu:</label>
+    <select id="menu" name="menu" required>
+      <option value="" disabled selected>Pilih Kategori</option>
+      <option value="Seblah Seafood">Seblak Seafood</option>
+      <option value="Seblak tulang">Seblak tulang</option>
+      <option value="Seblak komplit">Seblak komplit</option>
+      <option value="Baso aci">Baso aci</option>
+      <option value="Seblak Original">Seblak Original</option>
+      <option value="Seblak Ceker">Seblak Ceker</option>
+    </select>
+
+    <label for="level">level:</label>
+    <select id="level" name="level" required>
+      <option value="" disabled selected>Level</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+
+    <label for="Metode pembayaran">Metode pembayaran:</label>
+    <select id="Metode pembayaran" name="Metode pembayaran" required>
+      <option value="" disabled selected>metode pembayaran</option>
+      <option value="Delivery">Delivery</option>
+      <option value="Ambil Sendiri">Ambil Sendiri</option>
+    </select>
+
+    <label for="Jumlah Pesanan">Jumlah Pesanan:</label>
+    <input type="number" id="stok" name="stok" required>
+
+    <label for="nomor pembelian">Nomor pembelian:</label>
+    <input type="number" id="stok" name="stok" required>
+
+    <label for="Pesan untuk penjual">pesan untuk penjual:</label>
+    <textarea id="deskripsi" name="deskripsi" required></textarea>
+
+
+
+    <button type="submit" name="submit">Kirim Pesanan</button>
+  </form>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Citrarasa Seblak.</p>
+  </footer>
+
+</body>
+</html>
